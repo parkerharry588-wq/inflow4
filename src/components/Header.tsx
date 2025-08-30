@@ -46,7 +46,7 @@ export default function Header({ currentPage = 'home', onNavigate }: HeaderProps
               className="flex items-center space-x-2 cursor-pointer"
               onClick={() => handleNavigation('home')}
             >
-              <img src="/public/dffdf.png" alt="Inflow Logo" className="h-16 w-24" />
+              <img src="/public/dffdf.png" alt="Inflow Logo" className="h-12 w-24" />
             </div>
 
             {/* Desktop Navigation */}
