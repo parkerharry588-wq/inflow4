@@ -46,18 +46,19 @@ export default function Header({ currentPage = 'home', onNavigate }: HeaderProps
               className="flex items-center space-x-2 cursor-pointer"
               onClick={() => handleNavigation('home')}
             >
-              <div className="relative pl-4">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-lg blur-sm"></div>
-                <img 
-                  src="/public/dffdf.png" 
-                  alt="Inflow Logo" 
-                  className="h-10 w-auto relative z-10 image-rendering-crisp-edges" 
+              <div className="relative h-10 w-[110px] pl-4">
+                <div className="h-full w-full bg-gradient-to-r from-primary-500 to-secondary-500"
                   style={{
-                    imageRendering: '-webkit-optimize-contrast',
-                    backfaceVisibility: 'hidden',
-                    transform: 'translateZ(0)',
-                  }}
-                />
+                    WebkitMaskImage: "url('/dffdf.png')",
+                    maskImage: "url('/dffdf.png')",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                  }} />
+                <img src="/dffdf.png" alt="Inflow Logo" className="h-full w-auto opacity-0" />
               </div>
             </div>
 
