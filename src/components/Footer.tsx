@@ -35,8 +35,19 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Email */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <img src="/public/Screenshot 2025-08-23 154231.png" alt="Inflow" className="h-8 w-auto" />
+            <div className="relative h-8 w-[88px]">
+              <div className="h-full w-full bg-gradient-to-r from-primary-500 to-secondary-500"
+                style={{
+                  WebkitMaskImage: "url('/public/dffdf.png')",
+                  maskImage: "url('/public/dffdf.png')",
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskSize: "contain",
+                  maskSize: "contain",
+                  WebkitMaskPosition: "center",
+                  maskPosition: "center",
+                }} />
+              <img src="/public/dffdf.png" alt="Inflow" className="h-full w-auto opacity-0" />
             </div>
             <div className="space-y-2">
               <p className="text-gray-600 text-sm">Email:</p>

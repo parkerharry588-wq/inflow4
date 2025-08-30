@@ -53,21 +53,21 @@ export default function FeaturesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-24">
       <div className="container mx-auto px-6 py-20">
         {/* Hero Section */}
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
             Powerful Features
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Everything you need to manage clients, automate workflows, and grow your business efficiently.
           </p>
         </div>
 
         {/* Core Features */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
             Core Features
           </h2>
           
@@ -78,18 +78,18 @@ export default function FeaturesPage() {
                 className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
               >
                 <div className="flex-1">
-                  <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-                    <div className="text-purple-400 mb-6">
+                  <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+                    <div className="text-primary-600 mb-6">
                       {feature.icon}
                     </div>
-                    <h3 className="text-3xl font-bold text-white mb-4">{feature.title}</h3>
-                    <p className="text-gray-300 text-lg leading-relaxed mb-6">{feature.description}</p>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">{feature.title}</h3>
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6">{feature.description}</p>
                     
                     <div className="space-y-3">
                       {feature.benefits.map((benefit, benefitIndex) => (
                         <div key={benefitIndex} className="flex items-center">
-                          <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></div>
-                          <span className="text-gray-300">{benefit}</span>
+                          <div className="w-2 h-2 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3"></div>
+                          <span className="text-gray-600">{benefit}</span>
                         </div>
                       ))}
                     </div>
@@ -97,12 +97,12 @@ export default function FeaturesPage() {
                 </div>
                 
                 <div className="flex-1">
-                  <div className="aspect-video bg-slate-800/30 rounded-2xl border border-purple-500/20 flex items-center justify-center">
+                  <div className="aspect-video bg-gray-100 rounded-2xl border border-gray-200 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
                         {feature.icon}
                       </div>
-                      <p className="text-gray-400">Feature Demo</p>
+                      <p className="text-gray-500">Feature Demo</p>
                     </div>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ export default function FeaturesPage() {
 
         {/* Additional Features */}
         <div className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
             Additional Features
           </h2>
           
@@ -121,13 +121,13 @@ export default function FeaturesPage() {
             {additionalFeatures.map((feature, index) => (
               <div 
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300"
+                className="bg-white rounded-2xl p-6 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
               >
-                <div className="text-purple-400 mb-4">
+                <div className="text-primary-600 mb-4">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                <p className="text-gray-300">{feature.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -135,18 +135,18 @@ export default function FeaturesPage() {
 
         {/* CTA Section */}
         <div className="text-center">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-12 border border-purple-500/20 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <div className="bg-white rounded-2xl p-12 border border-gray-200 shadow-lg max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
               Ready to Transform Your Workflow?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               See how these powerful features can streamline your business operations and accelerate growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+              <button className="bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                 Start Free Trial
               </button>
-              <button className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 border border-white/20">
+              <button className="bg-gray-100 hover:bg-gray-200 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 border border-gray-300">
                 Schedule Demo
               </button>
             </div>

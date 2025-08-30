@@ -45,31 +45,31 @@ export default function TermsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-24">
       <div className="container mx-auto px-6 py-20 max-w-4xl">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
             Terms of Service
           </h1>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-gray-600">
             Welcome to Inflow! By signing up or using our platform, you agree to these terms:
           </p>
         </div>
 
         <div className="space-y-8">
           {sections.map((section, index) => (
-            <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-              <h2 className="text-2xl font-bold text-white mb-6">{section.title}</h2>
+            <div key={index} className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{section.title}</h2>
               
               {section.content && (
-                <p className="text-gray-300 leading-relaxed mb-4">{section.content}</p>
+                <p className="text-gray-600 leading-relaxed mb-4">{section.content}</p>
               )}
               
               {section.items && (
                 <ul className="space-y-3">
                   {section.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-gray-300 flex items-start">
-                      <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <li key={itemIndex} className="text-gray-600 flex items-start">
+                      <span className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span>{item}</span>
                     </li>
                   ))}

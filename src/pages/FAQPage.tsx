@@ -52,13 +52,13 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-24">
       <div className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
             Frequently Asked Questions
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Find answers to common questions about Inflow. Can't find what you're looking for? Feel free to contact our support team.
           </p>
         </div>
@@ -68,22 +68,22 @@ export default function FAQPage() {
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300"
+                className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none"
                 >
-                  <h3 className="text-xl font-semibold text-white pr-8">{faq.question}</h3>
-                  <div className="text-purple-400 flex-shrink-0">
+                  <h3 className="text-xl font-semibold text-gray-900 pr-8">{faq.question}</h3>
+                  <div className="text-primary-600 flex-shrink-0">
                     {openIndex === index ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
                   </div>
                 </button>
                 
                 {openIndex === index && (
                   <div className="px-8 pb-6">
-                    <div className="border-t border-purple-500/20 pt-6">
-                      <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                    <div className="border-t border-gray-200 pt-6">
+                      <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                     </div>
                   </div>
                 )}
@@ -93,14 +93,14 @@ export default function FAQPage() {
 
           {/* Contact CTA */}
           <div className="mt-16 text-center">
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-              <h2 className="text-2xl font-bold text-white mb-4">Still have questions?</h2>
-              <p className="text-gray-300 mb-6">
+            <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h2>
+              <p className="text-gray-600 mb-6">
                 Our support team is here to help. Get in touch and we'll get back to you as soon as possible.
               </p>
               <a
                 href="mailto:info@inflow.com"
-                className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                className="inline-block bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 Contact Support
               </a>

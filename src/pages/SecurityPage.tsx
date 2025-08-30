@@ -31,13 +31,13 @@ export default function SecurityPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-24">
       <div className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
             Security
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We take security seriously and follow industry best practices to keep your data safe.
           </p>
         </div>
@@ -46,28 +46,28 @@ export default function SecurityPage() {
           {securityFeatures.map((feature, index) => (
             <div 
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300"
+              className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
             >
-              <div className="text-purple-400 mb-6">
+              <div className="text-primary-600 mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
-              <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
 
         {/* Trust Statement */}
         <div className="text-center max-w-4xl mx-auto">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
+          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center">
                 <Shield className="w-8 h-8 text-white" />
               </div>
             </div>
             
-            <h2 className="text-3xl font-bold text-white mb-6">Your Business is Protected</h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Your Business is Protected</h2>
+            <p className="text-xl text-gray-600 leading-relaxed">
               Your business information and customer data are always protected within Inflow. 
               We maintain the highest standards of security and compliance to ensure your peace 
               of mind while you focus on growing your business.
@@ -77,17 +77,17 @@ export default function SecurityPage() {
 
         {/* Additional Security Info */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Data Protection</h3>
-            <p className="text-gray-300 leading-relaxed">
+          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Data Protection</h3>
+            <p className="text-gray-600 leading-relaxed">
               All customer data is encrypted using AES-256 encryption and stored in secure, 
               geographically distributed data centers with 24/7 monitoring and support.
             </p>
           </div>
           
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Compliance</h3>
-            <p className="text-gray-300 leading-relaxed">
+          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Compliance</h3>
+            <p className="text-gray-600 leading-relaxed">
               We adhere to industry-standard compliance frameworks and regularly undergo 
               security audits to ensure we meet the highest standards of data protection.
             </p>
