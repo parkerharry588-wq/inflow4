@@ -50,7 +50,7 @@ export default function Header({ currentPage = 'home', onNavigate }: HeaderProps
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-14">
               {navItems.map((item) => (
                 <button
                   key={item.key}
